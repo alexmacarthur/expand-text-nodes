@@ -1,0 +1,33 @@
+{
+  "name": "expand-text-nodes",
+  "version": "0.0.1",
+  "description": "Expand text within HTML into individual text nodes for each character.",
+  "main": "index.js",
+  "scripts": {
+    "prettify": "prettier ./**/*.{md,js} --write",
+    "start": "serve",
+    "test": "jest src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmacarthur/expand-text-nodes.git"
+  },
+  "keywords": ["html", "text nodes", "text", "DOM"],
+  "author": "Alex MacArthur <alex@macarthur.me> (https://macarthur.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexmacarthur/expand-text-nodes/issues"
+  },
+  "homepage": "https://github.com/alexmacarthur/expand-text-nodes#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6",
+    "prettier": "^2.3.2",
+    "serve": "^12.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,400,600,600italic,700"
+    />
+
+    <strong>Inspect the DOM to see expanded and non-expanded nodes. </strong>
+
+    <p>Non-expanded text.</p>
+    <p class="simple">Hello!</p>
+    <p class="nested">Hello, <em>pal!</em></p>
+    <p class="emoji">👍😂🐞</p>
+
+    <script type="module">
+      import expandTextNodes from './src/index.js';
+
+      expandTextNodes(document.querySelector('.simple'));
+      expandTextNodes(document.querySelector('.nested'));
+      expandTextNodes(document.querySelector('.emoji'));
+    </script>
+  </body>
+</html>
