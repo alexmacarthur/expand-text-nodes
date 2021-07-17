@@ -1,8 +1,8 @@
 {
   "name": "expand-text-nodes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Expand text within HTML into individual text nodes for each character.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "prettify": "prettier ./**/*.{md,js} --write",
     "start": "serve",
