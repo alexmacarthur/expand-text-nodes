@@ -1,7 +1,7 @@
 const expandTextNodes = (element) => {
   [...element.childNodes].forEach((child) => {
     if (child.nodeValue) {
-      child.nodeValue.split(/.*?/u).forEach((c) => {
+      [...child.nodeValue].forEach((c) => {
         child.parentNode.insertBefore(document.createTextNode(c), child);
       });
 
